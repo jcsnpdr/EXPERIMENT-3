@@ -4,36 +4,39 @@ using namespace std;
 
 int main()
 {
-int s, i, q, w;
+int s, w;
+int a, b;
 char arr[s];
 
-cout << "Enter the desired number of elements: "; cin >> s;
+
+cout << "enter the desired number of elements: ";
+cin >> s;
+cout << endl;
 
 cout << "enter the elements you want to be in reserved: ";
-
-for (i = 0;i < s; i++)
+for (a = 0 ; a < s; a++)
 {
-cin >> arr[i];
+	cin >> arr[a];
 }
-
-	q = i-1;
-	i = 0;
-	
-while (i < q)
+ 	b = s-1;
+ 	a =0;
+ 	
+while (a < b)
 {
-w = arr[i];
-arr[i] = arr[q];
-arr[q] = w;
-i++;
-q--;
+	w = arr[a];
+	arr[a] = arr[b];
+	arr[b] = w;
+	a++;
+	b--;
 }
 
 cout << endl;
-for (i = 0;i < s ;i++)
+for ( a=0; a < s; a++)
 {
-cout << arr[i] << " ";
-}
+	cout << arr[a] << " ";
 
+}
 
 return 0;
 }
+
