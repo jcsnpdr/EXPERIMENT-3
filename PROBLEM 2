@@ -1,0 +1,72 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double ta[7];
+	double tb[7];
+	double tc[7];
+	int i;
+	
+	cout << "enter the temperatures" << endl;
+	
+	cout << "province A";
+	for (i=0; i < 7; i++)
+	{
+		cout << endl;
+		cout << "day " << i + 1 << ": ";
+
+		cin >> ta[i];
+		
+	}
+	
+	cout << endl << "province B";
+		for (i=0; i < 7; i++)
+	{
+		cout << endl;
+		cout << "day " << i + 1 << ": ";
+		cin >> ta[i];
+		
+	}
+	
+		cout << endl << "province C";
+		for (i=0; i < 7; i++)
+	{
+		cout << endl;
+		cout << "day " << i + 1 << ": ";
+		cin >> ta[i];
+		
+	}
+	
+	cout << endl;
+	cout << "SUMMARY OF TEMPERATURES" << endl;
+	cout << "province a";
+	cout << endl;
+	
+	for (i = 0; i < 7; i++)
+	{
+		cout << "day " << i+1 << "= " << ta[i];
+		cout << endl;
+	}
+	
+		cout << "province b";
+		cout << endl;
+	
+	for (i = 0; i < 7; i++)
+	{
+		cout << "day " << i+1 << "= " << ta[i];
+		cout << endl;
+	}
+	
+		cout << "province c";
+		cout << endl;
+	
+	for (i = 0; i < 7; i++)
+	{
+		cout << "day " << i+1 << "= " << ta[i];
+		cout << endl;
+	}
+	
+	return 0;
+}
